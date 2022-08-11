@@ -11,16 +11,19 @@ pipeline {
 						}
 					stage('listing-files-in-workspace') {
         steps {
+		
+		def pwd="${WORKSPACE}/target"
+		sh "ls -R $(pwd)"
       
 		// sh "ls -R ${WORKSPACE}"
 	
 		//sh "ls -l"
-		dir("${env.WORKSPACE}"){
-    sh "pwd"
-}
-		sh "cd target"
-		sh "pwd"
-        }
+		// dir("${env.WORKSPACE}"){
+   		// sh "pwd"
+		//	}
+		//sh "cd target"
+		//sh "pwd"
+       		// }
     }
 	}
 }
