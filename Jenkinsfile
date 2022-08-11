@@ -13,7 +13,7 @@ pipeline {
         steps {
 		
 		def pwd="${WORKSPACE}/target"
-		sh "ls -R $(pwd)"
+		sh "ls -R $pwd"
       
 		// sh "ls -R ${WORKSPACE}"
 	
