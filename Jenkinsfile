@@ -6,7 +6,7 @@ pipeline {
 					
 							steps {
 							
-							sh 'mvn install'
+							sh 'mvn clean package'
 					       			}
 						}
 	stage('listing-files-in-workspace') {
