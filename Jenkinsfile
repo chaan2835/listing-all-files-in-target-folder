@@ -9,7 +9,7 @@ pipeline {
 							sh 'mvn install'
 					       			}
 						}
-					stage('sh how to') {
+					stage('listing-files-in-workspace') {
         steps {
       
 		sh "ls -R ${WORKSPACE}"
