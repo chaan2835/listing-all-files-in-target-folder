@@ -17,7 +17,7 @@ pipeline {
       
 		// sh "ls -R ${WORKSPACE}"
 	
-		//sh "ls -l"
+		sh "ls -l"
 		// dir("${env.WORKSPACE}"){
    		// sh "pwd"
 		//	}
