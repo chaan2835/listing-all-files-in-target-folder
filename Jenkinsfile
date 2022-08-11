@@ -12,9 +12,12 @@ pipeline {
 					stage('listing-files-in-workspace') {
         steps {
       
-		sh "ls -R ${WORKSPACE}"
-		sh "cd target"
-		sh "ls -l"
+		// sh "ls -R ${WORKSPACE}"
+		//sh "cd target"
+		//sh "ls -l"
+		dir("${env.WORKSPACE}/aQA"){
+    sh "pwd"
+}
         }
     }
 	}
