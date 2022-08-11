@@ -12,7 +12,7 @@ pipeline {
 					stage('sh how to') {
         steps {
       
-		sh "ls -R ${WORKSPACE}"
+		sh "ls -R ${WORKSPACE}/${**}/${**}"
 		sh "cd target"
 		sh "ls -l"
         }
