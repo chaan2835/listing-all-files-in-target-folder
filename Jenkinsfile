@@ -13,6 +13,8 @@ pipeline {
         steps {
       
 		sh "ls -R ${WORKSPACE}"
+		sh "cd target"
+		sh "ls -R ${target}"
         }
     }
 	}
