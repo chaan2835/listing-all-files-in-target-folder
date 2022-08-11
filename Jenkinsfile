@@ -14,6 +14,7 @@ pipeline {
 		script {
 		def pwd="${WORKSPACE}/target"
 		sh "ls -R $pwd"
+		// sh "ls -R ${WORKSPACE}" (to list all files in workspace)	
       		      		}
     			}
 		}
