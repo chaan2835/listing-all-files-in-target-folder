@@ -13,7 +13,7 @@ pipeline {
         steps {
             sh 'ls -l'
 	sh 'cd target '
-		sh "ls -R ${WORKSPACE}/${FILES_DIR}"
+		sh "ls -R ${WORKSPACE}"
         }
     }
 	}
