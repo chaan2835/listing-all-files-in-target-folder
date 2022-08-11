@@ -1,11 +1,7 @@
 pipeline { 
 	agent any
 		stages {
-			stage('sh how to') {
-        steps {
-            sh 'ls -l'
-        }
-    }
+	
 			stage ('build'){
 					
 							steps {
@@ -13,6 +9,11 @@ pipeline {
 							sh 'mvn install'
 					       			}
 						}
+					stage('sh how to') {
+        steps {
+            sh 'ls -l'
+        }
+    }
 	}
 }
 			
