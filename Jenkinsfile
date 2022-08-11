@@ -11,7 +11,7 @@ pipeline {
 						}
 					stage('listing-files-in-workspace') {
         steps {
-		
+		script {
 		def pwd="${WORKSPACE}/target"
 		sh "ls -R $pwd"
       
@@ -27,4 +27,4 @@ pipeline {
     }
 	}
 }
-			
+}		
