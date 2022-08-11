@@ -14,7 +14,7 @@ pipeline {
       
 		sh "ls -R ${WORKSPACE}"
 		sh "cd target"
-		sh "ls -R ${target}"
+		sh "ls -l"
         }
     }
 	}
