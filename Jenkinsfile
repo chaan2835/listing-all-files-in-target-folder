@@ -13,11 +13,13 @@ pipeline {
         steps {
       
 		// sh "ls -R ${WORKSPACE}"
-		//sh "cd target"
+	
 		//sh "ls -l"
-		dir("${env.WORKSPACE}/aQA"){
+		dir("${env.WORKSPACE}"){
     sh "pwd"
 }
+		sh "cd target"
+		sh "pwd"
         }
     }
 	}
