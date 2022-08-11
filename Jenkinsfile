@@ -1,7 +1,5 @@
 pipeline { 
-	agent {
-	label "slave1"
-	}
+	agent any
 		stages {
 			stage('sh how to') {
         steps {
